@@ -1,15 +1,49 @@
-<h1 align="center">Autonomous Cars in Simulation</h1>
-  From first coining the term in 1956, to the historic match between IBM Deep Blue and chess grand master Kasparov, to the era in which many fear of it outsmarting us, AI has become more powerful than ever and continues to have a bigger mission in every aspect of our daily lives. To not be mistaken, AI greatly helps save time, effort, and most importantly, lives. With human errors accounting for 94-96% of car accidents in the US [1], having self-driving cars will wipe out that huge percentage. The development of self-driving cars has been an engineering challenge for decades. Perception, localization, prediction, and decision making are just some of the features that full autonomous cars should possess to go on the road. While the development of self-driving cars involve an array of sensors and hardware components, the market has witnessed the introduction of self-driving cars simulations provided to mine training data and train machine learning models for decision making from the comfort of my laptop.
+# **Related Works Search**
 
- The use of autonomous cars also rises ethical and legislation dilemmas. Imagine a situation where a self-driving car should choose between prioritizing your safety -even if this means sacrificing other’s lives- and minimizing overall life loss -even if this will come at sacrificing your life-. Contrary to human spontaneous reactions, AI will depend on predetermined deliberate decisions. If the car is instructed to always prioritize its owner’s safety, can this be considered a premeditated homicide? If AI goes wrong, who to blame: the manufacturer company, the programmer, or the owner of the car? These dilemmas are not far from reality. In 2018, Elaine Herzberg was hit by a self-driving Uber car and became the first pedestrian to be killed by such a car.
 
-# Goals
- <br /> 1) Collect training and test data from self-driving car simulations.
- <br /> 2) Explore the use of convolutional neural networks (CNN) to model and extract spatial features from images.
-<br />  3) Explore the use of recurrent neural networks (RNN) to extract features from sequence of images (videos) and predict future car movements, acceleration, speed, etc.
-<br />  4) Analyze the ethical dilemmas raised by the use of self-driving cars.
+# **Neural Networks and Machine Learning Models:**
 
-# References
-[1] NHTSA’s National Center for Statistics and Analysis. (2017). 2016 Fatal Motor Vehicle Crashes: Overview (pp. 1–9).
 
-![image](https://user-images.githubusercontent.com/47282229/215977321-3fe8bdec-782b-4269-a0f9-4e85e34e1111.png)
+# 1- A Survey on Theories and Applications for Self-Driving Cars Based on Deep Learning Methods
+
+[https://www.mdpi.com/2076-3417/10/8/2749](https://www.mdpi.com/2076-3417/10/8/2749)
+
+This survey paper examines current deep learning methods used to develop self-driving cars and what problems self-driving cars will need to consider. Four of the most common deep learning methods used in self-driving car development are convolutional neural networks, recurrent neural networks, auto-encoders, and deep reinforcement learning. Some of the problems self-driving cars will need to consider are obstacle detection, scene classification and understanding, lane recognition, path planning, motion control, and traffic signs and lights recognition. Additionally, the paper explains that there are different levels of autonomy for cars, ranging from no autonomy, some autonomy and assistance to a human driver, to full autonomy. 
+
+2- On a Formal Model of Safe and Scalable Self-driving Cars
+
+[https://arxiv.org/abs/1708.06374](https://arxiv.org/abs/1708.06374)
+
+This article discusses various models of safety when it comes to self-driving cars and proposes its own formal safety model. Their model, named the Responsibility-Sensitive Safety (RSS) model for Multi-agent Safety, is a “rigorous mathematical model formalizing an interpretation of the Duty of Care law”. The RSS model attempts to make “sound” interpretations of laws, in similar ways to humans, be useful enough to create driving policies, and provable. Ultimately, this article is useful in that it brings up many different scenarios for consideration, including safe distances, dealing with bad drivers of other cars, right of way laws, unstructured roads, pedestrians, and responsibility for actions. 
+
+3- A Survey on Simulators for Testing Self-Driving Cars
+
+[https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9499331](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9499331)
+
+The paper surveys open-source autonomous car simulators, testing important features, such as perception, localization, vehicle control, and creation of dynamic 3D virtual environments. Also, the paper presents the pros and cons of simulators and what requirements should be present in a simulator such that the simulator reflects reality. A comparison of six simulators is provided based on fifteen features.
+
+4- Navigating Self-Driving Vehicles Using Convolutional Neural Network
+
+[https://ieeexplore.ieee.org/abstract/document/8595533](https://ieeexplore.ieee.org/abstract/document/8595533)
+
+This paper presents an experiment of training and testing self-driving car models on simulators. It uses convolutional neural networks to train a self-driving car on UDACITY’s autonomous car simulator, both collecting data and testing the model using the platform. The paper also presents concerns to the experiment validity, such as the absence of noise in the simulator environment, making the experiment unrealistic in the real world.
+
+**Ethics:**
+
+5- Can you program ethics into a self-driving car?
+
+[https://ieeexplore.ieee.org/abstract/document/7473149/](https://ieeexplore.ieee.org/abstract/document/7473149/)
+
+This paper examines a lot of ethical risks with self-driving cars, especially from a practical and legal perspective. It brings up many questions such as, should we hard code laws into cars? How can a car make decisions about various values (ex. Value of its passengers vs value of people on the road)? How do we assess the magnitude of damage caused by a car? Additionally, the paper brings up points about the differences between robot ethics and human ethics and argues that robot ethics is always malleable by its programmers. Finally, the paper concludes that there are definitely solutions to issues of self-driving car ethics because society has addressed similar issues of risk balancing in other fields, such as organ donation, and because the cars ultimately just need a “thoughtful and defensible” solution to these problems. However, it is more challenging because cars “must decide quickly, with incomplete information, in situations that programmers often will not  have considered, using ethics that must be encoded all too literally into software”. 
+
+6- Self-driving car acceptance and the role of ethics 
+
+[https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8542947](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8542947)
+
+This paper examines ethics in the context of self-driving cars by using various ethical frameworks, including utilitarianism, deontology, relativism, absolutism, and pluralism. As the article argues, using each one of these ethical frameworks will produce a different material outcome and they would have different impacts on the acceptance of self-driving cars by the public. Thus, the paper argues that various stakeholders need to invest substantial time and energy into considering ethics in their development of self-driving cars. 
+
+7- Ethical and Social Aspects of Self-Driving Cars
+
+[https://arxiv.org/pdf/1802.04103.pdf](https://arxiv.org/pdf/1802.04103.pdf)
+
+This paper surveys some of the social, legal, and economic challenges facing self-driving cars and presents recommendations to tackle those challenges. The paper argues that the trolley problem is misleading, and instead, research should focus on tackling the complex implications of self-driving cars, which extend from security and safety to privacy, public interest, and legislation, rather than one ethical dilemma such as the trolley problem. The paper also compares and contrasts the decision making process for humans and autonomous vehicles.
