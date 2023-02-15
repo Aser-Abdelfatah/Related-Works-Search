@@ -1,6 +1,3 @@
-# **Related Works Search**
-
-
 # **Neural Networks and Machine Learning Models:**
 
 
@@ -28,7 +25,7 @@ The paper surveys open-source autonomous car simulators, testing important featu
 
 This paper presents an experiment of training and testing self-driving car models on simulators. It uses convolutional neural networks to train a self-driving car on UDACITY’s autonomous car simulator, both collecting data and testing the model using the platform. The paper also presents concerns to the experiment validity, such as the absence of noise in the simulator environment, making the experiment unrealistic in the real world.
 
-**Ethics:**
+# **Ethics:**
 
 5- Can you program ethics into a self-driving car?
 
